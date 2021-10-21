@@ -1,13 +1,12 @@
 import React from "react";
 import NavLink from "./NavLink";
 
-function Navbar() {
+function Navbar({pages = ["About Me", "Portfolio", "Contact", "Resume"]}) {
     return (
         <nav>
-            <NavLink page="About Me"/>
-            <NavLink page="Portfolio"/>
-            <NavLink page="Contact"/>
-            <NavLink page="Resume"/>
+            {pages.map(page => {
+                return <NavLink page={page}/>
+            })}
         </nav>
     );
 };

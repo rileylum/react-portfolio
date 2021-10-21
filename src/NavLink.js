@@ -1,8 +1,8 @@
 import React from "react";
 
-function NavLink(props) {
+function NavLink({page}) {
     return (
-        <a href="#">{props.page}</a>
+        <a href="#">{page}</a>
     );
 };
 
