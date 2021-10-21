@@ -1,7 +1,14 @@
 import React from "react";
 
+import Portfolio from "./components/Portfolio"
+
 function App() {
-    return (<h1>Hello World!</h1>)
+
+    return (
+    <div>
+        <Portfolio />
+    </div>
+    )
 }
 
 export default App;

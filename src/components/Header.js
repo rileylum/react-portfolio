@@ -2,11 +2,11 @@ import React from "react";
 
 import Navbar from "./Navbar";
 
-function Header() {
+function Header({pages, currPage}) {
     return (
     <header>
         <h1>Riley Lum</h1>
-        <Navbar />
+        <Navbar pages={pages} currPage={currPage}/>
     </header>
     )
 }
