@@ -9,7 +9,9 @@ function NavItem({page, currPage, updateCurrPage}) {
     }
 
     return (
-        <a href="#" className={isCurrent ? "current-page" : ""} onClick={handleClick}>{page.title}</a>
+        <li className="nav-item">
+            <span className={isCurrent ? "current-page nav-link" : "nav-link"} onClick={handleClick}>{page.title}</span>
+        </li>
     );
 };
 
