@@ -10,7 +10,7 @@ function NavItem({page, currPage, updateCurrPage}) {
 
     return (
         <li className="nav-item">
-            <span className={isCurrent ? "current-page nav-link active text-end" : "nav-link text-end"} onClick={handleClick}>{page.title}</span>
+            <span className={`nav-link text-end ${isCurrent ? "active" : ""}`} onClick={handleClick}>{page.title}</span>
         </li>
     );
 };
