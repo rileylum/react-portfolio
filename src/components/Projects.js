@@ -26,7 +26,7 @@ function Projects() {
     ]
 
     return (
-        <section className="mb-3 p-3" id="projects">
+        <section className="mb-3 p-3">
             <h2 className="text-center display-3 mb-3">Projects</h2>
             <div className="d-flex justify-content-center">
                 <div className="w-75">
