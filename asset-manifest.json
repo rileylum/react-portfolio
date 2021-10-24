@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.js": "/riley-portfolio/static/js/main.cfbf0b17.chunk.js",
+    "main.js.map": "/riley-portfolio/static/js/main.cfbf0b17.chunk.js.map",
+    "runtime-main.js": "/riley-portfolio/static/js/runtime-main.a9ff503a.js",
+    "runtime-main.js.map": "/riley-portfolio/static/js/runtime-main.a9ff503a.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/riley-portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.289a1fc2.chunk.js": "/riley-portfolio/static/js/2.289a1fc2.chunk.js",
+    "static/js/2.289a1fc2.chunk.js.map": "/riley-portfolio/static/js/2.289a1fc2.chunk.js.map",
+    "index.html": "/riley-portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/riley-portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/js/2.289a1fc2.chunk.js.LICENSE.txt": "/riley-portfolio/static/js/2.289a1fc2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a9ff503a.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.289a1fc2.chunk.js",
+    "static/js/main.cfbf0b17.chunk.js"
+  ]
+}
