@@ -38,7 +38,7 @@ The server will be hosted at localhost:3000/ by default.
 
 You can also view the project hosted live on [Github Pages](https://rileylum.github.io/react-portfolio/)
 
-![Homepage, showing the total budget, options to add expenses and a table and graph detailing previous expenses](./MD_resources/demo.gif)
+![Animation showing the individual pages of the app: About Me, Portfolio, Contact and Resume](./MD_resources/demo.gif)
 
 ## Contribution Instructions
 
