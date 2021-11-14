@@ -41,18 +41,18 @@ function Contact() {
     return (
         <section className="mb-3 p-3">
             <h2 className="text-center display-3 mb-3">Contact Me</h2>
-            <form onSubmit={handleSubmit}>
+            <form action="https://submit-form.com/xdx3pTWX" onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
-                    <input type="text" value={fields.name} onChange={handleChange} onBlur={formValidate} onFocus={clearValidate} className="form-control" id="name"/>
+                    <input type="text" name="name" value={fields.name} onChange={handleChange} onBlur={formValidate} onFocus={clearValidate} className="form-control" id="name"/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="email" className="form-label">Email Address</label>
-                    <input type="email" value={fields.email} onChange={handleChange} onBlur={formValidate} onFocus={clearValidate} className="form-control" id="email"/>
+                    <input type="email" name="email" value={fields.email} onChange={handleChange} onBlur={formValidate} onFocus={clearValidate} className="form-control" id="email"/>
                 </div>
                 <div className="mb-3">
                     <label htmlFor="message" className="form-label">Message</label>
-                    <textarea value={fields.message} onChange={handleChange}  onBlur={formValidate} onFocus={clearValidate} className="form-control" id="message" rows="3"></textarea>
+                    <textarea name="message" value={fields.message} onChange={handleChange}  onBlur={formValidate} onFocus={clearValidate} className="form-control" id="message" rows="3"></textarea>
                 </div>
                 {errors && (<p className="d-block">{`${errors.name}`}</p>)}
                 {errors && (<p className="d-block">{`${errors.email}`}</p>)}
