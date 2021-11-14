@@ -5,8 +5,22 @@ function Contact() {
     const [fields, setFields] = useState({name:"",email:"",message:""});
     const [errors, setErrors] = useState({name:"",email:"",message:""});
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
+        await fetch("https://submit-form.com/xdx3pTWX", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json"
+            },
+            body: JSON.stringify({
+                name: fields.name,
+                email: fields.email,
+                message: fields.message
+            })
+        });
+        alert("Form submitted");
+        setFields({name:"",email:"",message:""})
     }
 
     const handleChange = (e) => {
@@ -39,9 +53,20 @@ function Contact() {
     }
 
     return (
-        <section className="mb-3 p-3">
+        <section className="mb-3 p-3 d-flex flex-column">
             <h2 className="text-center display-3 mb-3">Contact Me</h2>
-            <form action="https://submit-form.com/xdx3pTWX" onSubmit={handleSubmit}>
+            <div className="d-flex justify-content-center">
+                <div className="w-75">
+                    <div className="d-flex flex-column justify-content-center text-center text-white fs-3">
+                        <div><i className="far fa-envelope text-secondary mx-3"></i><span>rileylum@adam.com.au</span>
+                        </div>
+                        <div><i className="far fa-phone text-secondary mx-3"></i><span>+61 434 810 436</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 className="text-center display-5 fs-2 my-3">Send me a message: </h3>
+            <form className="col-12 col-md-8 col-lg-6 m-auto" onSubmit={handleSubmit}>
                 <div className="mb-3">
                     <label htmlFor="name" className="form-label">Name</label>
                     <input type="text" name="name" value={fields.name} onChange={handleChange} onBlur={formValidate} onFocus={clearValidate} className="form-control" id="name"/>
